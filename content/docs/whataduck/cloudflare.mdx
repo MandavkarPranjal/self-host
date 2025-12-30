@@ -1,0 +1,51 @@
+---
+title: Cloudflare Pages
+description: Deploying WhataDuck on Cloudflare Pages
+---
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+Deploying on Cloudflare Pages is not that easy as Vercel, but it's still pretty easy.
+
+There are no "Deploy to Cloudflare Pages" buttons on the repository, so you have to do it manually.
+
+## Steps
+
+<Steps>
+    <Step>
+        Fork the repository
+        [Create a fork](https://github.com/MandavkarPranjal/whataduck/fork)
+    </Step>
+    <Step>
+        Go to [Cloudflare Dashboard](https://dash.cloudflare.com/)
+    </Step>
+    <Step>
+        Go to "Compute & AI" then "Workers & Pages"
+    </Step>
+    <Step>
+        Create application
+    </Step>
+    <Step>
+        Look for "Looking to deploy Pages? Get started" at the bottom and click on it
+    </Step>
+    <Step>
+        Select "Import an existing Git repository" and select the repository you forked earlier
+    </Step>
+    <Step>
+        Select "Import an existing Git repository" and select the repository you forked earlier
+    </Step>
+    <Step>
+        Select "React (Vite)" as framework preset in Build settings
+    </Step>
+    <Step>
+        Build command
+        ```bash
+        pnpm run build
+        ```
+    </Step>
+    <Step>
+        Then click on "Save and Deploy"
+    </Step>
+</Steps>
+<Callout type="info">
+    Build output directory should be `dist` in build settings
+</Callout>
