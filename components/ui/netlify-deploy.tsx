@@ -12,11 +12,11 @@ export function NetlifyDeploy({
     repositoryName = projectName,
 }: NetlifyDeployProps) {
     const encodedUrl = encodeURIComponent(repositoryUrl)
-    const vercelUrl = `https://app.netlify.com/start/deploy?repository=${encodedUrl}&project-name=${projectName}&repository-name=${repositoryName}`
+    const netlifyUrl = `https://app.netlify.com/start/deploy?repository=${encodedUrl}&project-name=${projectName}&repository-name=${repositoryName}`
 
     return (
         <Link
-            href={vercelUrl}
+            href={netlifyUrl}
             target="_blank"
             rel="noopener noreferrer"
         >
