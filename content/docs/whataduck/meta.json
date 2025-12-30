@@ -5,11 +5,13 @@
     "icon": "ArrowUpRight",
     "pages": [
         "index",
-        "---Cloud Providers---",
+        "---Serverless Providers---",
         "vercel",
         "netlify",
         "cloudflare",
         "render",
-        "other"
+        "other",
+        "---On-Premise Deployment---",
+        "on-prem"
     ]
 }

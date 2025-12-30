@@ -1,0 +1,24 @@
+---
+title: Other...
+description: Deploying WhataDuck on any other provider
+---
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+I don't know many providers, but whichever provider you are using, but here are the general steps to deploy WhataDuck on any other provider:
+
+<Steps>
+    <Step>
+        Fork the repository:
+        [Create a fork](https://github.com/MandavkarPranjal/whataduck/fork)
+    </Step>
+    <Step>
+        Create a new Project on your chosen provider
+    </Step>
+    <Step>
+        Select WhataDuck repo & click on Deploy
+    </Step>
+</Steps>
+
+<Callout type="info">
+    If build command is not generated, set this `pnpm run build` command and publish directory to `dist`
+</Callout>
