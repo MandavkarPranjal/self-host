@@ -1,0 +1,26 @@
+---
+title: Render
+description: Deploying WhataDuck on Render
+---
+import { RenderDeploy } from '@/components/ui/render-deploy';
+
+Deploying on Render is quick and easy as it gives [Infrastructure as Code (IaC)](https://aws.amazon.com/what-is/iac/) support.
+
+Just click the deploy button below to get your WhataDuck instance up and running on Render.
+<RenderDeploy
+  repositoryUrl="https://github.com/MandavkarPranjal/whataduck"
+/>
+that's it!
+
+by default, auto-sync is enabled, so if you want to disable it, you can do it in the settings of your Render dashboard.
+
+---
+If you want to do it manually, then remember the following settings:
+
+**Build Command:**
+```sh
+pnpm install --frozen-lockfile; pnpm run build
+```
+
+**Publish Directory:**
+`dist`

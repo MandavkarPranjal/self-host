@@ -8,6 +8,8 @@
         "---Cloud Providers---",
         "vercel",
         "netlify",
-        "cloudflare"
+        "cloudflare",
+        "render",
+        "other"
     ]
 }
