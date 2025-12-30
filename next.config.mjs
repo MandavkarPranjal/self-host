@@ -4,7 +4,18 @@ const withMDX = createMDX();
 
 /** @type {import('next').NextConfig} */
 const config = {
-  reactStrictMode: true,
+    reactStrictMode: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'vercel.com',
+                port: '',
+                pathname: '/**',
+            }
+        ],
+        unoptimized: true,
+    }
 };
 
 export default withMDX(config);

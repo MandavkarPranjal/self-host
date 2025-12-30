@@ -1,0 +1,34 @@
+---
+title: Netlify
+description: Deploying WhataDuck to Netlify
+---
+import { NetlifyDeploy } from '@/components/ui/netlify-deploy';
+import { Step, Steps } from 'fumadocs-ui/components/steps';
+
+Deploying on Netlify is simple
+
+Follow the steps below to get your WhataDuck instance up and running on Netlify or just click the deploy button.
+<NetlifyDeploy
+  repositoryUrl="https://github.com/MandavkarPranjal/whataduck"
+  projectName="whataduck"
+/>
+
+## Steps
+<Steps>
+    <Step>
+        #### Fork the repository
+        [Create a fork](https://github.com/MandavkarPranjal/whataduck/fork)
+    </Step>
+    <Step>
+        #### Create a new Project on Netlify
+        https://app.netlify.com/start
+    </Step>
+    <Step>
+        #### Connect your GitHub account
+    </Step>
+    <Step>
+        #### Select WhataDuck repo & click on Deploy
+        that's it!
+    </Step>
+</Steps>
+

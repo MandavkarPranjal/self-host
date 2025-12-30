@@ -3,9 +3,15 @@ import { DocsLayout } from 'fumadocs-ui/layouts/docs';
 import { baseOptions } from '@/lib/layout.shared';
 
 export default function Layout({ children }: LayoutProps<'/docs'>) {
-  return (
-    <DocsLayout tree={source.pageTree} {...baseOptions()}>
-      {children}
-    </DocsLayout>
-  );
+    return (
+        <DocsLayout
+            tree={source.pageTree}
+            {...baseOptions()}
+            sidebar={{
+                enabled: true,
+            }}
+        >
+            {children}
+        </DocsLayout>
+    );
 }

@@ -1,0 +1,12 @@
+{
+    "title": "WhataDuck",
+    "description": "Fast, secure & your search engine",
+    "root": true,
+    "icon": "ArrowUpRight",
+    "pages": [
+        "index",
+        "---Cloud Providers---",
+        "vercel",
+        "netlify"
+    ]
+}
